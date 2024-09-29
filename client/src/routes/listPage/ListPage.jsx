@@ -16,9 +16,9 @@ function ListPage() {
           ))}
         </div>
       </div>
-      <d iv className="mapContainer">
-        
-      </d>
+      <div className="mapContainer">
+        <Map  items={data}/>
+      </div>
     </div>
   );
 }
