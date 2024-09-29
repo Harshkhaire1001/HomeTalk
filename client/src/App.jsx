@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from './routes/homePage/homePage';
 import ListPage from './routes/listPage/ListPage';
+import SinglePage from './routes/singlePage/singlePage';
 import {
   createBrowserRouter, 
   RouterProvider
@@ -21,7 +22,11 @@ function App() {
         {
           path : "/list",
           element: <ListPage />
-        }
+        },
+        {
+          path: "/:id",
+          element: <SinglePage />,
+        },
       ]
     },
   ]);
