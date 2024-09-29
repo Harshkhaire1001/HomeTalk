@@ -9,6 +9,7 @@ import {
 import { Layout } from './routes/layout/Layout';
 import ProfilePage from './routes/profilePage/profilePage';
 import RegisterPage from './routes/register/register';
+import LoginPage from './routes/login/login';
 
 function App() {
 
@@ -36,6 +37,10 @@ function App() {
         {
           path: "/register",
           element: <RegisterPage />
+        },
+        {
+          path: "/login",
+          element: <LoginPage />
         }
       ]
     },
