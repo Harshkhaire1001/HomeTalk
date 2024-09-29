@@ -6,7 +6,7 @@ import {
   createBrowserRouter, 
   RouterProvider
 } from "react-router-dom";
-import { Layout } from './routes/layout/Layout';
+import { Layout, RequireAuth } from './routes/layout/Layout';
 import ProfilePage from './routes/profilePage/profilePage';
 import RegisterPage from './routes/register/register';
 import LoginPage from './routes/login/login';
@@ -43,6 +43,16 @@ function App() {
           element: <LoginPage />
         }
       ]
+    },
+    {
+      path: "/",
+      element: <RequireAuth />,
+      children: [
+        {
+          path: "/profile",
+          element: <ProfilePage />
+        },
+      ],
     },
   ]);
 
