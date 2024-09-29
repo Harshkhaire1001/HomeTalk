@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Layout, RequireAuth } from './routes/layout/Layout';
 import ProfilePage from './routes/profilePage/profilePage';
+import ProfileUpdatePage from './routes/profileUpdatePage/profileUpdatePage';
 import RegisterPage from './routes/register/register';
 import LoginPage from './routes/login/login';
 
@@ -51,6 +52,10 @@ function App() {
         {
           path: "/profile",
           element: <ProfilePage />
+        },
+        {
+          path: "/profile/update",
+          element: <ProfileUpdatePage />
         },
       ],
     },
