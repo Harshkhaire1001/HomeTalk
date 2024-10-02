@@ -36,10 +36,6 @@ function App() {
           loader : singlePageLoader,
         },
         {
-          path: "/profile",
-          element: <ProfilePage />
-        },
-        {
           path: "/register",
           element: <RegisterPage />
         },
