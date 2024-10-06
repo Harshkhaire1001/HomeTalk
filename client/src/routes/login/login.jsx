@@ -55,7 +55,7 @@ function Login() {
             placeholder="Password"
           />
           <button disabled={isLoading}>Login</button>
-          {error && <span>error</span>}
+          {error && <span>{error}</span>}
           <Link to="/register">{"Don't"} have an account?</Link>
         </form>
       </div>
